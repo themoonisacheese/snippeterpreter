@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <script>
         args=${JSON.stringify(args)}
     </script>
-    <script src="" type="module">
-    </script>
+    <script src="https://themoonisacheese.github.io/snippeterpreter/snippet.js" type="module"/>
 
 <!-- end snippet -->`;
         resultArea.textContent = result;
