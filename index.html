@@ -17,7 +17,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="center">
-            <input type="text" name="code" id="codeinput" placeholder="Input your code here"/> <br>
+            <textarea name="code" id="codeinput" placeholder="Input your code here"></textarea> <br>
             <table id="argTable">
                 <tr>
                     <th>Arguments</th>
@@ -26,6 +26,9 @@
                     <td><input type="text" class="argInput" placeholder="Argument 1"/></td>
                 </tr>
             </table>
+        </div>
+        <div class="result">
+            <button id="copyButton" class="copy-button">Copy to Clipboard</button>
         </div>
         <div class="result">
             <textarea id="resultArea" readonly></textarea>

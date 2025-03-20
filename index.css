@@ -13,6 +13,10 @@ body {
 #codeinput {
     width: 80%; /* Enlarge the code input box */
     margin-bottom: 10px; /* Reduce margin to bring it closer to the input area */
+    height: 150px; /* Set a height for the textarea */
+    font-family: monospace; /* Use a monospaced font */
+    white-space: pre; /* Preserve whitespace */
+    resize: vertical; /* Allow vertical resizing */
 }
 
 .result {
@@ -58,4 +62,17 @@ body {
     text-align: left;
     background-color: #4CAF50; /* Keep the header background color */
     color: white;
+}
+
+.copy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.copy-button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }

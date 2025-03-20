@@ -78,6 +78,15 @@ document.addEventListener('DOMContentLoaded', () => {
         updateResult();
     }
 
+    function copyToClipboard() {
+        const resultArea = document.getElementById('resultArea');
+        navigator.clipboard.writeText(resultArea.value).then(() => {
+            console.log('Copied to clipboard');
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
+
     // Attach event listeners to the code input
     const codeInput = document.getElementById('codeinput');
     codeInput.addEventListener('input', updateResult);
@@ -86,4 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialArgInput = document.querySelector('.argInput');
     initialArgInput.placeholder = 'Run 1 Arg 0';
     initialArgInput.addEventListener('input', handleArgInput);
+
+    // Attach event listener to the copy button
+    const copyButton = document.getElementById('copyButton');
+    copyButton.addEventListener('click', copyToClipboard);
 });
