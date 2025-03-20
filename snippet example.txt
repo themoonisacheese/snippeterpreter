@@ -1,0 +1,18 @@
+
+
+
+<!-- begin snippet: js hide: false console: true babel: null babelPresetReact: false babelPresetTS: false -->
+
+<!-- language: lang-html -->
+
+    <script type=vyxal3>
+    u=?fƛ?n≛}A∧
+    </script>
+    <script>
+    args = [["run0arg0","arg1"],["run1arg0"],["run2arg0","run2arg1"]]
+    </script>
+    <script src="" type=module>
+    </script>
+
+<!-- end snippet -->
+
