@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- language: lang-html -->
 
     <script type="vyxal3">
-    ${codeInput}
+${codeInput}
     </script>
     <script>
         args=${JSON.stringify(args)}
