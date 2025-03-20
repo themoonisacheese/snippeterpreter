@@ -30,6 +30,9 @@ button.onclick = () => {
 document.body.appendChild(button);
 
 var s = document.querySelector("script[type=vyxal3]").text
+if (args.length === 0) {
+    args.push([]);
+}
 for (const a of args){
     var out=[a," -> "]
     Vyxal.execute(s, a, "", out.push.bind(out), out.push.bind(out)) 
