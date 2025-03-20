@@ -1,0 +1,61 @@
+body {
+    background-color: #252525;
+}
+
+.center {
+    display: flex;
+    flex-direction: column; /* Display elements vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Adjust height to make space for the result area */
+}
+
+#codeinput {
+    width: 80%; /* Enlarge the code input box */
+    margin-bottom: 10px; /* Reduce margin to bring it closer to the input area */
+}
+
+.result {
+    margin-top: 10px; /* Reduce margin to bring it closer to the input area */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#resultArea {
+    width: 80%;
+    font-family: monospace; /* Use a monospaced font */
+    white-space: pre; /* Preserve whitespace */
+    resize: none; /* Prevent resizing */
+    height: auto; /* Adjust height to fit contents */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#argTable {
+    width: 80%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #333; /* Dark background for the table */
+}
+
+#argTable td, #argTable th {
+    border: 1px solid #555; /* Darker border color */
+    padding: 8px;
+    color: #ddd; /* Light text color */
+}
+
+#argTable tr:nth-child(even) {
+    background-color: #444; /* Slightly lighter background for even rows */
+}
+
+#argTable tr:hover {
+    background-color: #555; /* Highlight row on hover */
+}
+
+#argTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50; /* Keep the header background color */
+    color: white;
+}
