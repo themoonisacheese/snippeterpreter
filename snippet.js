@@ -5,7 +5,7 @@ console.log("Vyxal " + Vyxal.getVersion())
 const input = document.createElement("input");
 input.type = "text";
 input.id = "vyxalInput";
-input.placeholder = "Args (JSON)";
+input.placeholder = "Args (JSON or bare ints)";
 document.body.appendChild(input);
 
 const button = document.createElement("button");
