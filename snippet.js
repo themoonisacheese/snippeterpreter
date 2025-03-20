@@ -18,6 +18,7 @@ button.onclick = () => {
         if (!Array.isArray(parsedInput)) {
             parsedInput = [parsedInput];
         }
+        parsedInput = parsedInput.map(item => typeof item === 'number' ? item.toString() : item);
     } catch (e) {
         console.error("Invalid JSON input");
         return;
